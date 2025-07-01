@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crash Bandicoot - Historia y Legado</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://images2.alphacoders.com/593/593030.jpg');
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        header {
+            background: linear-gradient(135deg, #FF8C00, #FFA500);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            border-bottom: 5px solid #8B4513;
+        }
+
+        h1 {
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            font-size: 3.5rem;
+            margin: 0;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+            letter-spacing: 2px;
+        }
+
+        h2 {
+            font-family: 'Trebuchet MS', sans-serif;
+            color: #FF8C00;
+            border-bottom: 2px dashed #FF8C00;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            font-family: 'Verdana', sans-serif;
+            color: #8B4513;
+        }
+
+        .subtitle {
+            font-style: italic;
+            font-size: 1.2rem;
+        }
+
+        nav {
+            background-color: #8B4513;
+            padding: 1rem 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #FFD700;
+        }
+
+        section {
+            padding: 2rem;
+        }
+
+        .intro {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        .intro-text {
+            flex: 1;
+            padding-right: 2rem;
+        }
+
+        .intro-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .intro-image img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            border: 3px solid #FF8C00;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 2rem 0;
+        }
+
+        .gallery-item {
+            flex-basis: 48%;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .gallery-item img, .gallery-item iframe {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery-item p {
+            font-style: italic;
+            color: #666;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background-color: white;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #FF8C00;
+            color: white;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .highlight {
+            background-color: #FFFACD;
+            padding: 15px;
+            border-left: 4px solid #FFD700;
+            margin: 1.5rem 0;
+            font-style: italic;
+        }
+
+        .character-card {
+            display: flex;
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .character-image {
+            flex: 1;
+        }
+
+        .character-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .character-info {
+            flex: 2;
+            padding: 1.5rem;
+        }
+
+        .character-info h3 {
+            color: #FF8C00;
+            margin-top: 0;
+        }
+
+        footer {
+            background: linear-gradient(135deg, #8B4513, #A0522D);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+
+        .social-links {
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #FFD700;
+        }
+
+        .divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, #FF8C00, transparent);
+            margin: 2rem 0;
+        }
+
+        .quote {
+            font-family: 'Georgia', serif;
+            font-size: 1.2rem;
+            color: #8B4513;
+            text-align: center;
+            font-style: italic;
+            margin: 2rem 0;
+            padding: 1rem;
+            border-left: 3px solid #FF8C00;
+            border-right: 3px solid #FF8C00;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #FF8C00;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            margin-top: 1rem;
+        }
+
+        .btn:hover {
+            background-color: #FF6347;
+        }
+
+        .text-orange {
+            color: #FF8C00;
+        }
+
+        .text-brown {
+            color: #8B4513;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .italic {
+            font-style: italic;
+        }
+
+        .feedback-form {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .feedback-form label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: #8B4513;
+        }
+
+        .feedback-form input,
+        .feedback-form select,
+        .feedback-form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .feedback-form textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .feedback-form button {
+            background-color: #FF8C00;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .feedback-form button:hover {
+            background-color: #FF6347;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CRASH BANDICOOT</h1>
+            <p class="subtitle">La mascota más icónica de los videojuegos</p>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#historia">Historia</a></li>
+                <li><a href="#personajes">Personajes</a></li>
+                <li><a href="#juegos">Juegos</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#trivia">Trivia</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+                <li><a href=file:///C:/Users/alexm/OneDrive/Desktop/Crash%20Bandicoot/Crash%20Bandicoot%202.0.html>Visita mi página secundaria</a></li>
+            </ul>
+        </nav>
+
+        <section id="historia">
+            <div class="intro">
+                <div class="intro-text">
+                    <h2>Historia de Crash Bandicoot</h2>
+                    <p>Crash Bandicoot es una serie de videojuegos de plataformas creada por <span class="bold">Andy Gavin y Jason Rubin</span> durante su tiempo en <span class="text-orange">Naughty Dog</span>. El primer juego fue lanzado en 1996 para la PlayStation de Sony y presentó al personaje principal, <span class="text-orange bold">Crash Bandicoot</span>, un marsupial antropomórfico modificado genéticamente.</p>
+                    <p>La franquicia se convirtió en una de las <span class="bold">más reconocidas</span> de la PlayStation original y ha sido descrita como la <span class="italic">"mascota no oficial"</span> de la consola. A lo largo de los años, la serie ha evolucionado e incluye numerosas secuelas y spin-offs.</p>
+                    <a href="#juegos" class="btn">Ver lista de juegos</a>
+                </div>
+                <div class="intro-image">
+                    <img src="https://cl.buscafs.com/www.levelup.com/public/uploads/images/651333_600x315.jpg" alt="Crash Bandicoot clásico" title="Crash Bandicoot (1996)">
+                </div>
+            </div>
+
+            <div class="highlight">
+                <p>"Crash Bandicoot fue nuestra respuesta a los juegos de plataformas en 3D de la época. Queríamos crear algo que fuera divertido, desafiante y con un personaje memorable." - <span class="bold">Jason Rubin, co-creador</span></p>
+            </div>
+
+            <div class="divider"></div>
+
+            <h3>Desarrollo y Legado</h3>
+            <p>El desarrollo de Crash Bandicoot comenzó en <span class="bold">1994</span>, cuando Naughty Dog solo tenía 6 empleados. El juego fue un <span class="text-orange bold">éxito comercial y crítico</span>, vendiendo más de 6.8 millones de copias en todo el mundo.</p>
+            <p>La serie ha sido alabada por su:</p>
+            <img src="https://i2-prod.dailystar.co.uk/incoming/article20426731.ece/ALTERNATES/s1227b/0_httpscdnimagesdailystarcoukdynamic122photos71000900x738502071" width="300" height="200" alt="Crash Bandicoot" style="float:right; margin-left:20px;">
+            <ul>
+                <li><span class="bold">Gameplay innovador</span> que combinaba plataformas 2D y 3D</li>
+                <li><span class="bold">Diseño de personajes carismáticos</span></li>
+                <li><span class="bold">Dificultad equilibrada</span> pero desafiante</li>
+                <li><span class="bold">Banda sonora memorable</span></li>
+            </ul>
+        </section>
+        <section id="personajes">
+            <h2>Personajes Principales</h2>
+
+            <div class="character-card">
+                <div class="character-image">
+                    <img src="https://th.bing.com/th/id/R.07e3fedbdf146f7c345262f8fc69a81a?rik=eSF%2b2R9QnDGzkQ&riu=http%3a%2f%2fwww.pngall.com%2fwp-content%2fuploads%2f8%2fCrash-Bandicoot-PNG-Image-File.png&ehk=aAC9Rcf9aasGDxv%2b%2fxVyoEOV39JBLC8G04pH%2bwTSTzo%3d&risl=&pid=ImgRaw&r=0" alt="Crash Bandicoot">
+                </div>
+                <div class= "character-info">
+                    <h3>Crash Bandicoot</h3>
+                    <p>El protagonista de la serie, un bandicoot marrón-anaranjado que fue modificado genéticamente por el Dr. Neo Cortex. Crash es conocido por su personalidad alegre y torpe, pero valiente cuando se trata de salvar el día.</p>
+                    <p><span class="bold">Habilidades:</span> Spin attack, double jump, slide, body slam</p>
+                    <p><span class="bold">Debilidad:</span> A veces demasiado confiado</p>
+                </div>
+            </div>
+
+            <div class="character-card">
+                <div class="character-image">
+                    <img src="https://i.pinimg.com/originals/c3/e9/42/c3e9425dae400976b834268a5a1cbb28.png" width=100 height=100 alt="Coco Bandicoot">
+                </div>
+                <div class="character-info">
+                    <h3>Coco Bandicoot</h3>
+                    <p>La hermana menor inteligente de Crash. Coco es una genio de las computadoras y a menudo ayuda a Crash en sus aventuras con sus habilidades tecnológicas. En algunos juegos, es un personaje jugable.</p>
+                    <p><span class="bold">Habilidades:</span> Hacking, programación, motociclismo</p>
+                    <p><span class="bold">Debilidad:</span> No es tan fuerte físicamente como Crash</p>
+                </div>
+            </div>
+
+            <div class="character-card">
+                <div class="character-image">
+                    <img src= "https://tse3.mm.bing.net/th/id/OIP.CsjNoLEPCiHiIycIV0ZsCgAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" alt=" Sony Dr. Neo Cortex">
+                </div>
+                <div class="character-info">
+                    <h3>Dr. Neo Cortex</h3>
+                    <p>El principal antagonista de la serie. Cortex es un científico loco que planea dominar el mundo con un ejército de animales mutantes. Crash fue uno de sus experimentos que escapó de su control.</p>
+                    <p><span class="bold">Habilidades:</span> Inteligencia genial, creación de armas</p>
+                    <p><span class="bold">Debilidad:</span> Sus planes siempre fallan</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="juegos">
+            <h2>Juegos Principales de la Serie</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Año</th>
+                        <th>Título</th>
+                        <th>Plataforma</th>
+                        <th>Notas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1996</td>
+                        <td>Crash Bandicoot</td>
+                        <td>PlayStation</td>
+                        <td>Primer juego de la serie</td>
+                    </tr>
+                    <tr>
+                        <td>1997</td>
+                        <td>Crash Bandicoot 2: Cortex Strikes Back</td>
+                        <td>PlayStation</td>
+                        <td>Introdujo nuevos movimientos</td>
+                    </tr>
+                    <tr>
+                        <td>1998</td>
+                        <td>Crash Bandicoot: Warped</td>
+                        <td>PlayStation</td>
+                        <td>Primer juego con Coco jugable</td>
+                    </tr>
+                    <tr>
+                        <td>1999</td>
+                        <td>Crash Team Racing</td>
+                        <td>PlayStation</td>
+                        <td>Spin-off de carreras</td>
+                    </tr>
+                    <tr>
+                        <td>2001</td>
+                        <td>Crash Bandicoot: The Wrath of Cortex</td>
+                        <td>PS2, Xbox, GameCube</td>
+                        <td>Primer juego en PS2</td>
+                    </tr>
+                    <tr>
+                        <td>2017</td>
+                        <td>Crash Bandicoot N. Sane Trilogy</td>
+                        <td>PS4, Xbox One, Switch, PC</td>
+                        <td>Remasterización de los primeros 3 juegos</td>
+                    </tr>
+                    <tr>
+                        <td>2020</td>
+                        <td>Crash Bandicoot 4: It's About Time</td>
+                        <td>PS4, Xbox One, PS5, Xbox Series X/S</td>
+                        <td>Secuela directa de Warped</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="quote">
+                "La trilogía original de Crash Bandicoot sigue siendo uno de los mejores ejemplos de juegos de plataformas en 3D, con un diseño de niveles excepcional y una jugabilidad satisfactoria."
+            </div>
+        </section>
+
+        <section id="galeria">
+            <h2>Galería Multimedia</h2>
+
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="https://media.giphy.com/media/urfh9LOBcKg4vgmkCi/giphy.gif" alt="Crash bailando">
+                    <p>Crash celebrando una victoria</p>
+                </div>
+                <div class="gallery-item">
+                    <iframe width="560" height="315" src="Medios de audio.html/videoplayback (1).mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>Crash Bandicoot Mind over mutant</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYThmdjU2ZGVrenl4MHhreGliOGg4ZDVnNHd1NXZxMG91bWxjZW9idyZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/YfKGxrj0Wr6bqgRdNZ/giphy.gif" alt="Arte conceptual">
+                    <p>Crash Bandicoot apunto de caer</p>
+                </div>
+                <div class="gallery-item">
+                    <iframe width="560" height="315" src="Medios de audio.html/videoplayback.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>Crash Bandicoot titans</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="trivia">
+            <h2>Datos Curiosos y Trivia</h2>
+            <ul>
+                <li>El nombre original de Crash era "<span class="italic">Willie the Wombat</span>" antes de cambiarlo a Crash Bandicoot.</li>
+                <li>Crash fue uno de los primeros juegos en usar <span class="bold">animación facial</span> para los personajes.</li>
+                <li>El diseño de Crash fue influenciado por personajes como <span class="italic">Taz de Looney Tunes</span> y <span class="italic">Sonic the Hedgehog</span>.</li>
+                <li>El famoso baile de victoria de Crash está inspirado en un <span class="bold">baile tradicional maorí</span>.</li>
+                <li>En Japón, la serie se llama "<span class="italic">Crash Bandicoot: Bakusou Nitro</span>".</li>
+            </ul>
+
+            <div class="highlight">
+                <p>¿Sabías que? Crash Bandicoot fue uno de los primeros juegos en usar <span class="bold">iluminación dinámica</span> y <span class="bold">efectos de sombra</span> en tiempo real, lo que era muy avanzado para su época.</p>
+            </div>
+        </section>
+        <section id="feedback">
+            <h2>¿Te gustó la página?</h2>
+            <div class="feedback-form">
+                <p>Por favor, comparte tus comentarios sobre la página. ¡Tu opinión es importante!</p>
+                <form action="https://formsubmit.co/16b24c4feef99bb6af263b0b4ca69e42" method="POST" >
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="Nombre" required>
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="Correo Electrónico" required>
+                    <label for="rating">¿Qué te pareció la página?</label>
+                    <select id="rating" name="Le parecio:" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="Excelente">Excelente</option>
+                        <option value="Bueno">Bueno</option>
+                        <option value="Regular">Regular</option>
+                        <option value="Malo">Malo</option>
+                    </select>
+
+                    <label for="comments">Comentarios adicionales:</label>
+                    <textarea id="comments" name="Comentario"></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+        <audio id="crashAudio" loop>
+            <source src="Medios de audio.html/Crash Twinsanity Soundtrack - N. Sanity Island-yt.savetube.me.mp3" type="audio/mpeg">
+            Tu navegador no soporta audio HTML5.
+        </audio>
+
+        <footer>
+            <h3>Crash Bandicoot - Sitio de Fans</h3>
+            <p>© 2023 - Todos los derechos reservados a sus respectivos dueños</p>
+            <p>Sitio creado por fans, para fans</p>
+            
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </footer>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const audio = document.getElementById('crashAudio');
+            audio.volume = 1.0;
+            audio.play().catch(error => {
+                console.log("Autoplay bloqueado, requiriendo interacción del usuario");
+                const playBtn = document.createElement('button');
+                playBtn.textContent = '▶ Activar música';
+                playBtn.style.position = 'fixed';
+                playBtn.style.bottom = '20px';
+                playBtn.style.right = '20px';
+                playBtn.style.zIndex = '1000';
+                playBtn.style.padding = '10px 20px';
+                playBtn.style.backgroundColor = '#FF8C00';
+                playBtn.style.color = 'white';
+                playBtn.style.border = 'none';
+                playBtn.style.borderRadius = '5px';
+                document.body.appendChild(playBtn);
+                
+                playBtn.addEventListener('click', () => {
+                    audio.play();
+                    playBtn.remove();
+                });
+            });
+        });
+    </script>
+    
+    <!-- Font Awesome para íconos -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>>
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="entry.1234567890" required>
+
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="entry.0987654321" required>
+
+                    <label for="rating">¿Qué te pareció la página?</label>
+                    <select id="rating" name="entry.1122334455" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="Excelente">Excelente</option>
+                        <option value="Bueno">Bueno</option>
+                        <option value="Regular">Regular</option>
+                        <option value="Malo">Malo</option>
+                    </select>
+
+                    <label for="comments">Comentarios adicionales:</label>
+                    <textarea id="comments" name="entry.5566778899"></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+        <audio id="crashAudio" loop>
+            <source src="medios/Crash Twinsanity Soundtrack - N. Sanity Island-yt.savetube.me.mp3" type="audio/mpeg">
+            Tu navegador no soporta audio HTML5.
+        </audio>
+
+        <footer>
+            <h3>Crash Bandicoot - Sitio de Fans</h3>
+            <p>© 2023 - Todos los derechos reservados a sus respectivos dueños</p>
+            <p>Sitio creado por fans, para fans</p>
+            
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </footer>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const audio = document.getElementById('crashAudio');
+            audio.volume = 1.0;
+            audio.play().catch(error => {
+                console.log("Autoplay bloqueado, requiriendo interacción del usuario");
+                const playBtn = document.createElement('button');
+                playBtn.textContent = '▶ Activar música';
+                playBtn.style.position = 'fixed';
+                playBtn.style.bottom = '20px';
+                playBtn.style.right = '20px';
+                playBtn.style.zIndex = '1000';
+                playBtn.style.padding = '10px 20px';
+                playBtn.style.backgroundColor = '#FF8C00';
+                playBtn.style.color = 'white';
+                playBtn.style.border = 'none';
+                playBtn.style.borderRadius = '5px';
+                document.body.appendChild(playBtn);
+                
+                playBtn.addEventListener('click', () => {
+                    audio.play();
+                    playBtn.remove();
+                });
+            });
+        });
+    </script>
+    
+    <!-- Font Awesome para íconos -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
